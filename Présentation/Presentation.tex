@@ -94,7 +94,7 @@
 \end{frame}
 
 \section{Commandes basiques}
-\subsection{Récupérons un dépôt}
+\subsection{Passons à la pratique !}
 \begin{frame}
 \frametitle{Passons à la pratique !}
 \begin{itemize}
@@ -105,7 +105,6 @@
 \end{itemize}
 \end{frame}
 
-\subsection{Personnalisation de Git}
 \begin{frame}
 \frametitle{Personnalisation de Git}
 \texttt{\# Nécessaires :\\
@@ -118,7 +117,6 @@ git config color.ui auto\\
 }
 \end{frame}
 
-\subsection{Création d'une branche}
 \begin{frame}
 \frametitle{Création d'une branche}
 Cela permet de travailler sur une fonctionnalité sans se soucier des autres.
@@ -132,7 +130,6 @@ Cela permet de travailler sur une fonctionnalité sans se soucier des autres.
 \end{itemize}
 \end{frame}
 
-\subsection{Création et modification de fichiers}
 \begin{frame}
 \frametitle{Création et modification de fichiers}
 On va ajouter ou modifier des fichiers du dépôt.
@@ -150,7 +147,6 @@ On va ajouter ou modifier des fichiers du dépôt.
 \end{frame}
 
 
-\subsection{Les messages de commit}
 \begin{frame}
 \frametitle{Les messages de commit}
 Ils sont d'une importance capitale !\\
@@ -161,7 +157,6 @@ Ils doivent être courts (= une ligne = 80 caractères), mais si il faut détail
 \end{frame}
 
 
-\section{Travailler avec les autres}
 \begin{frame}
 \frametitle{Travailler avec les autres}
 \begin{itemize}
@@ -183,6 +178,17 @@ Ils doivent être courts (= une ligne = 80 caractères), mais si il faut détail
 \end{frame}
 
 \section{La cachette (stash)}
+\subsection{La cachette (stash)}
+\begin{frame}
+\frametitle{La cachette (stash)}
+Elle permet de "cacher" les modifications de git (les déplacer dans un coin). Comme ça on peut pull, merge, etc, puis \emph{ensuite} les ressortir et gérer les conflits (eh oui :(… )
+\begin{itemize}
+    \item "Cacher" les modifications\\\command{git stash}
+    \item Ressortir les modifications\\\command{git stash pop}
+    \item Détruire le stash\\\command{git stash drop}
+\end{itemize}
+\end{frame}
+
 \begin{frame}
 \frametitle{La cachette (stash)}
 Elle permet de "cacher" les modifications de git (les déplacer dans un coin). Comme ça on peut pull, merge, etc, puis \emph{ensuite} les ressortir et gérer les conflits (eh oui :(… )
@@ -222,6 +228,5 @@ Elle permet de "cacher" les modifications de git (les déplacer dans un coin). C
         \item \texttt{git add / rm <fichier>} : Suivre ou supprimer des fichiers\vspace*{2mm}
         \item \texttt{git commit} : Une "étape", nécessite un message explicite\\("ajouté telle fonctionnalité", "résolu tel bug")\vspace*{2mm}
         \item \texttt{git pull / push}
-
 
 
