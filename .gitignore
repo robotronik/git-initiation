@@ -1,0 +1,76 @@
+
+# Ce fichier permet de dire à git de totalement ignorer certains fichiers
+# ===
+
+## Fichiers compilés
+# Générique
+*.o
+*.a
+# PIC
+*.cof
+*.mcw
+*.hex
+build/
+dist/
+
+
+## Fichiers de configuration des environnements de développement
+# MPLabX
+*.d
+*.pre
+*.p1
+*.lst
+*.sym
+*.obj
+*.sdb
+*.obj.dmp
+nbproject/private/
+nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+funclist
+nbproject/Makefile-*
+disassembly/
+*.map
+
+### LaTex
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.nav
+*.snm
+
+*.pdf
+
+## Intermediate documents:
+*.dvi
+*-converted-to.*
+# these rules might exclude image files for figures etc.
+*.ps
+*.eps
+# *.pdf
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
